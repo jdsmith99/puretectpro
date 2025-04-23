@@ -1,6 +1,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --font-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-dark: #1a1a1a;
+  --color-light: #f5f5f5;
+  --color-accent: #d4a373;
 }
 
 @media (prefers-color-scheme: dark) {

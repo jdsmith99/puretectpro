@@ -12,13 +12,13 @@ export default function HomePage() {
     <div className={styles.container}>
       {/* Top Deals Bar */}
       <div className={styles.dealsBar}>
-        <p>🔥 FREE SHIPPING ON ORDERS OVER $50 🔥</p>
+        <p>Free shipping on orders over $50</p>
       </div>
 
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.logo}>
-          <img src="/logo-2.png"></img>
+          <img src="/Logo-4.svg"></img>
         </div>
 
         <div className={styles.nav}>

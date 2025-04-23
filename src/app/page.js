@@ -60,7 +60,7 @@ export default function HomePage() {
 
       {/* Product Carousel */}
       <div className={styles.carousel}>
-        <h2>Featured Products</h2>
+        <h2>FEATURED PRODUCTS</h2>
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
@@ -70,31 +70,26 @@ export default function HomePage() {
           }}
         >
           <SwiperSlide className={styles.carouselItem}>
-            <Image
-              src="https://www.reuzel.com/cdn/shop/files/fiber-pomade-4oz-front_720x.jpg"
-              alt="Product 1"
-              width={200}
-              height={200}
-            />
-            <p> The Tabs</p>
+            <Image src="/thebag1.png" alt="The Tabs" width={400} height={400} />
+            <p>THE TABS</p>
           </SwiperSlide>
           <SwiperSlide className={styles.carouselItem}>
             <Image
-              src="https://www.reuzel.com/cdn/shop/files/blue-pomade-4oz-front_720x.jpg"
-              alt="Product 2"
-              width={200}
-              height={200}
+              src="/thebottle2.png"
+              alt="The Spray"
+              width={300}
+              height={400}
             />
-            <p>The Spray</p>
+            <p>THE SPRAY</p>
           </SwiperSlide>
           <SwiperSlide className={styles.carouselItem}>
             <Image
-              src="https://www.reuzel.com/cdn/shop/files/clay-matte-pomade-4oz-front_720x.jpg"
+              src="/thejar1.png"
               alt="Product 3"
-              width={200}
-              height={200}
+              width={400}
+              height={400}
             />
-            <p>The Jar</p>
+            <p>THE JAR</p>
           </SwiperSlide>
         </Swiper>
       </div>

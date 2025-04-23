@@ -48,7 +48,7 @@ export default function HomePage() {
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <img
-            src="/hero-image.png"
+            src="/hero-image2.png"
             alt="PureTect Hero Image"
             className={styles.heroImage}
           />

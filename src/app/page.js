@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/pagination";
 import styles from "./page.module.css";
 
 export default function HomePage() {
@@ -62,7 +64,9 @@ export default function HomePage() {
       <div className={styles.carousel}>
         <h2>FEATURED PRODUCTS</h2>
         <Swiper
+          modules={[Pagination]}
           spaceBetween={20}
+          pagination={{ clickable: true }}
           slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 2 },
@@ -83,13 +87,12 @@ export default function HomePage() {
             <p>THE SPRAY</p>
           </SwiperSlide>
           <SwiperSlide className={styles.carouselItem}>
-            <Image
-              src="/thejar1.png"
-              alt="Product 3"
-              width={400}
-              height={400}
-            />
+            <Image src="/thejar1.png" alt="The Jar" width={400} height={400} />
             <p>THE JAR</p>
+          </SwiperSlide>
+          <SwiperSlide className={styles.carouselItem}>
+            <Image src="/thekit1.png" alt="The Kit" width={400} height={400} />
+            <p>THE KIT</p>
           </SwiperSlide>
         </Swiper>
       </div>

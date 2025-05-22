@@ -1,0 +1,242 @@
+.container {
+  font-family: var(--font-base);
+  color: var(--color-dark);
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Deals Bar */
+.dealsBar {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 20;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: white;
+  color: #000000;
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo,
+.nav,
+.socialIconsHeader {
+  flex: 1 1 0%; /* Equal grow/shrink, no inherent width */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  justify-content: flex-start;
+}
+
+.logo img {
+  width: 200px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.socialIconsHeader {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.socialIconsHeader a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+.socialIconsHeader img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+.heroContent {
+  /* max-width: 1200px; */
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.heroContent img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.heroContent h1,
+.heroContent p,
+.heroButton {
+  position: relative;
+  color: white;
+}
+.heroContent h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+}
+.heroContent p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.heroButton {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.heroButton:hover {
+  opacity: 0.9;
+}
+
+/* Carousel */
+.carousel {
+  padding: 60px 20px;
+  background-color: var(--color-light);
+  text-align: center;
+  min-height: 2000px;
+}
+.carousel h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 0.6px;
+}
+.carouselItem {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carouselItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.carouselItem p {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  margin-top: 60px;
+  font-family: var(--font-base);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  .nav {
+    flex-direction: column;
+    display: none;
+  }
+  .heroContent h1 {
+    font-size: 36px;
+  }
+  .carousel h2 {
+    font-size: 24px;
+  }
+  .socialIconsHeader {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Dark Mode */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-dark: #f0f0f0;
+    --color-light: #1a1a1a;
+    --color-accent: #d4a373;
+  }
+
+  .container,
+  .footer,
+  .header,
+  .heroContent {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+  }
+
+  .nav a,
+  .socialIconsHeader a {
+    color: #f0f0f0;
+  }
+
+  .heroButton {
+    background-color: var(--color-accent);
+    color: #000;
+  }
+} */

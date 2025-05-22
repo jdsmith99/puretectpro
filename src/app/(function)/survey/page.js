@@ -24,7 +24,7 @@ export default function SurveyPage() {
   return (
     <div className={styles.container}>
       {/* Top Deals Bar */}
-      <div className={styles.nav}>
+      <div className={styles.feedback}>
         <p>WE APPRECIATE YOUR FEEDBACK!</p>
       </div>
 
